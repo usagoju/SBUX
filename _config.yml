@@ -28,10 +28,12 @@ repository:
   repository_provider: "github"  # Specify your custom provider here
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
+  extra_navbar: ""
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
-  extra_navbar: ""
+  
+      
