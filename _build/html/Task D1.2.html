@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Task D1.2 &#8212; The Starbucks Project</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Task D1.2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Task D1.3" href="Task%20D1.3.html" />
+    <link rel="prev" title="Task D1.1" href="Task%20D1.1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/The Starbucks Project Logo Draft 9-2-23.jpg" class="logo__image only-light" alt="The Starbucks Project - Home"/>
+    <script>document.write(`<img src="_static/The Starbucks Project Logo Draft 9-2-23.jpg" class="logo__image only-dark" alt="The Starbucks Project - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to The Starbucks Project!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Overview%20of%20the%20Starbucks%20Project.html">Overview of the Term Project</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Figure%201.%20Project%20Summary%20Flowchart.html">Figure 1. Project Summary Flowchart</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Deliverable%20One%20Intro.html">Deliverable One: Financial Statement Analysis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Task%20D1.1.html">Task D1.1</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Task D1.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D1.3.html">Task D1.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D1.4.html">Task D1.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D1.5.html">Task D1.5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Deliverable%20Two%20Intro.html">Deliverable Two: Connecting Theory to Practice – Company-Level Risk Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D2.1.html">Task D2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D2.2.html">Task D2.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D2.3.html">Task D2.3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Deliverable%20Three%20Intro.html">Deliverable Three: Connecting Theory to Practice – Store-Level Risk Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D3.1.html">Task D3.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D3.2.html">Task D3.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D3.3.html">Task D3.3:</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Deliverable%20Four%20Intro.html">Deliverable Four: Connecting Theory to Practice – Communicating Results</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D4.1.html">Task D4.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D4.2.html">Task D4.2: The group leader uploads the PowerPoint document via the course learning management system.</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Deliverable%20Five%20Intro.html">Deliverable Five: Self-Reflection</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D5.1.html">Task D5.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Task%20D5.2.html">Task D5.2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="Final%20Thoughts.html">Final Thoughts</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTask D1.2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Task D1.2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Task D1.2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-excel-to-analyze-financial-statement-information">Use Excel to analyze financial statement information</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="task-d1-2">
+<h1>Task D1.2<a class="headerlink" href="#task-d1-2" title="Link to this heading">#</a></h1>
+<section id="use-excel-to-analyze-financial-statement-information">
+<h2>Use Excel to analyze financial statement information<a class="headerlink" href="#use-excel-to-analyze-financial-statement-information" title="Link to this heading">#</a></h2>
+<p>Students are required to visit the Starbucks website to obtain and gather the Income Statement (Consolidated Statement of Earnings), Balance Sheet (Consolidated Balance Sheets) and, and Cash Flow Statements (Consolidated Statement of Cash Flows) for the past three years, which are contained in Starbucks Form 10-K filings. A Form 10-K is an annual report that is filed with the <a class="reference external" href="https://www.sec.gov/">Security and Exchange Commission (SEC)</a>.</p>
+<p>To locate these filings, navigate to the <a class="reference external" href="https://www.starbucks.com/">Starbucks homepage</a>, scroll to the bottom of the homepage, and you will see a section labeled “About Us” in the lower left-hand corner. Under that section, one will see a link to “<a class="reference external" href="https://investor.starbucks.com/ir-home/default.aspx">Investor Relations</a>” (Figure 2, Panel A). That link will direct you to the Starbucks Investor Relations page (Figure 2, Panel B). In the menu across the top of the page, you will see a link labeled “Financials”. When one hovers the mouse over it, a Financial Data pop-up screen will appear (Figure 2, Panel C).  Select “<a class="reference external" href="https://investor.starbucks.com/financials/annual-reports/default.aspx">Annual Reports</a>” underneath the words “Financial Data”.  The latest annual report will appear (Figure 2, Panel D). Scrolling all the way down on this webpage, you will see Annual Reports dated back to 1999. You will select the “FY23 Annual Report” (Figure 2, Panel E) (Note: students should start with the latest published year available). When one clicks on this link, one will see a PDF version of the FY23 Annual Report, which contains the FY23 10-K . To find prior years’ financial data, students can look at past SEC filings directly in the Starbucks webpages. On the Starbucks <a class="reference external" href="https://investor.starbucks.com/financials/annual-reports/default.aspx">Annual Report Homepage</a>, under Financials, there is a link to <a class="reference external" href="https://investor.starbucks.com/financials/sec-filings/default.aspx">SEC Filings</a> (Figure 2, Panel F).</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/The_bottom_of_Starbucks_Homepage_FY2023.jpg"><img alt="The Bottom of Starbucks Homepage FY2023" src="_images/The_bottom_of_Starbucks_Homepage_FY2023.jpg" style="width: 558.75px; height: 213.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><strong>Figure 2, Panel A: Finding Financial Statement Information.</strong> <br />
+<strong>The Bottom of Starbucks Homepage FY2023</strong></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/Starbucks_Investor_Relations_Page_FY2023.jpg"><img alt="Starbucks Investor Relations Page FY2023" src="_images/Starbucks_Investor_Relations_Page_FY2023.jpg" style="width: 565.6px; height: 307.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><strong>Figure 2, Panel B: Finding Financial Statement Information.</strong> <br />
+<strong>Starbucks Investor Relations Page FY2023</strong></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/Starbucks_Investor_Relations_Page_(hovering_over_Financial_Data_tab)_FY2023.jpg"><img alt="Starbucks Investor Relations Page (hovering over Financial Data tab) FY2023" src="_images/Starbucks_Investor_Relations_Page_%28hovering_over_Financial_Data_tab%29_FY2023.jpg" style="width: 53.400000000000006px; height: 23.200000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text"><strong>Figure 2, Panel C: Finding Financial Statement Information.</strong> <br />
+<strong>Starbucks Investor Relations Page (hovering over Financial Data tab) FY2023</strong></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/Starbucks_Annual_Report_Homepage_FY2023.jpg"><img alt="Starbucks Annual Report Homepage FY2023" src="_images/Starbucks_Annual_Report_Homepage_FY2023.jpg" style="width: 515.6999999999999px; height: 397.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text"><strong>Figure 2, Panel D: Finding Financial Statement Information.</strong> <br />
+<strong>Starbucks Annual Report Homepage FY2023</strong></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/Starbucks_2023_Annual_Report_Page_FY2023.jpg"><img alt="Starbucks Annual Report Page FY2023" src="_images/Starbucks_2023_Annual_Report_Page_FY2023.jpg" style="width: 359.40000000000003px; height: 290.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text"><strong>Figure 2, Panel E: Finding Financial Statement Information.</strong> <br />
+<strong>Starbucks  Annual Report Page FY2023</strong></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/Starbucks_SEC_Filings_Page_FY2023.jpg"><img alt="Starbucks SEC Filings Page FY2023" src="_images/Starbucks_SEC_Filings_Page_FY2023.jpg" style="width: 573.2px; height: 490.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text"><strong>Figure 2, Panel F: Finding Financial Statement Information.</strong> <br />
+<strong>Starbucks SEC Filings Page FY2023</strong></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Once the Annual Report has been accessed, scroll down to the Table of Contents. Click on Part II, Item 8, Financial Statements and Supplementary Data. The first financial statement that you will see is Starbucks Corporation Consolidated Statement of Earnings (Income Statement). Note that it covers a three year period. Scroll down further and you will see two other financial statements that are needed for the analysis: Consolidated Balance Sheets and Consolidated Statement of Cash Flows (Cash Flow Statements), as well as the Notes to Consolidated Financial Statements (as shown in Figure 2, Panels G-J).</p>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="_images/Statements_of_Earnings_FY2023.jpg"><img alt="Part II, Item 8. Statements of Earnings FY23023" src="_images/Statements_of_Earnings_FY2023.jpg" style="width: 317.7px; height: 339.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text"><strong>Figure 2, Panel G: Finding Financial Statement Information.</strong> <br />
+<strong>Part II, Item 8. Statements of Earnings FY2023</strong></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="_images/Balance_Sheets_FY2023.jpg"><img alt="Part II, Item 8. Balance Sheets FY2023" src="_images/Balance_Sheets_FY2023.jpg" style="width: 348.3px; height: 416.4px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text"><strong>Figure 2, Panel H: Finding Financial Statement Information.</strong> <br />
+<strong>Part II, Item 8. Balance Sheets FY2023</strong></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="_images/Cash_Flow_Statements_FY2023.jpg"><img alt="Part II, Item 8. Cash Flow Statements FY2023" src="_images/Cash_Flow_Statements_FY2023.jpg" style="width: 344.7px; height: 435.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text"><strong>Figure 2, Panel I: Finding Financial Statement Information.</strong> <br />
+<strong>Part II, Item 8. Cash Flow Statements FY2023</strong></span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="_images/Notes_to_Financials_FY2023.jpg"><img alt="Part II, Item 8. Notes to Financial Statements FY2023" src="_images/Notes_to_Financials_FY2023.jpg" style="width: 334.2px; height: 184.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text"><strong>Figure 2, Panel J: Finding Financial Statement Information.</strong> <br />
+<strong>Part II, Item 8. Notes to Financial Statements FY2023</strong></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>What to do once students have accessed the financial statements.</strong></p>
+<p>Once the financial statements of interest are accessed, students are to create a master spreadsheet in Excel that will display at least three years of data (or whatever your instructor requires ) for the Consolidated Statement of Earnings (Income Statement – IS), Consolidated Balance Sheets (BS) and Consolidated Statement of Cash Flows (Cash Flow Statements - CF). To accomplish this task, create three blank worksheets (in the same Excel file) and label each sheet IS, BS, and CF. In column A for each worksheet, transfer the account names exactly as you find them in the financial statements. If students encounter account names in one year and not the next, students will still write all of them in column A. Students must physically retype the information, not simply copying and pasting.</p>
+<p>In columns B, C and D, fill in the figures found on each financial statement for each of the years. Note that the 10-K financial information is presented from the latest to earlier years.  For analytical purposes, reverse them and present the information from the earliest year to the later years. In the header row, label column B: 2019, column C: 2020, column D: 2021 (Students will use the latest three years available). Color coding and contrasting headers with bold lettering for a more visually professional appearance is acceptable and encouraged. The immediate goal in this task is to get the formatting down and set up the spreadsheets as best as possible.
+The purpose of physically transferring information is to allow students to become much more familiar with the account names and corresponding figures and achieve the objective of organizing, structuring, and presenting complex financial data for analysis.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Task%20D1.1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Task D1.1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Task%20D1.3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Task D1.3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-excel-to-analyze-financial-statement-information">Use Excel to analyze financial statement information</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Joseph Foy, CPA
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

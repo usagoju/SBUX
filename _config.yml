@@ -2,8 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: The Starbucks Project
-author: The Jupyter Book Community
+author: Name withheld while under review
 logo: The Starbucks Project Logo Draft 9-2-23.jpg
+copyright: "2024"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

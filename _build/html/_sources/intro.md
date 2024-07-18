@@ -1,9 +1,9 @@
 # Welcome to The Starbucks Project!
 
-This is a small sample book to give you a feel for how book content is
-structured.
+## Starbucks Term Research Project: A Step-by-Step Student Guide
 
-Check out the content pages bundled with this book as they develop to see more.
+This e-Guide is an exciting five-deliverable experiential learning project. On the left-hand sidebar, there is a Table of Contents that divides each deliverable into an easy-to-understand presentation.
 
-```{tableofcontents}
-```
+Check out the content!
+
+
