@@ -1,0 +1,23 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+# Task D1.5
+
+## Individually upload the Excel document via the institution’s course learning management system. 
+
+Although this deliverable relies on a collaborative effort, each group member is to create their own spreadsheet and have other group members review it prior to submitting it to the instructor. The group leader for deliverable one is responsible for making sure that each member of the group is peer reviewed by at least one other member of the group.
+ 
+It is inevitable that students will share ideas and see other member’s work. It is tempting to use ideas others have created and incorporate it into your own work. Those ideas may look really cool or are presented in a way that helps one understand better. If the temptation is too irresistible, students should not copy other group member’s work without explicitly acknowledging them. Students should also be aware that other member’s work cannot simply be copied without creating a significant portion of the work product on their own. It is the responsibility of students to review their school’s policy on plagiarism and have a discussion with their instructor if in doubt whether any actions would constitute plagiarism. Students should strive to be creative in their own way and share their ideas. Sharing will allow other group members to expand their knowledge. 
+
+Once students have completed the charting task, they will upload their Excel file into the learning management system. For deliverable one, only Excel files will be accepted adhering to the due date set by the instructor. For deliverable one, late submissions lose 50% credit if submitted within one week after the due date. After one week past the due date, no credit will be given. However, this deliverable still must be completed to advance to the next deliverable. If it is not completed, no credit will be given for the term project. 
+
+
