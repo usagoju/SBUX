@@ -10,10 +10,11 @@ kernelspec:
   name: python3
 ---
 
-# Figure 1. Project Summary Flowchart
+# Deliverables Process Flowchart
 
-```{image} images/Project_Summary_Flowchart.jpg
-:alt: Example Image
-:class: image-class
-:width: 800px
-:align: center
+```{figure} images/Project_Summary_Flowchart.jpg
+:scale: 40 %
+:alt: Deliverables Process Flowchart
+
+**Deliverables Process Flowchart** 
+```

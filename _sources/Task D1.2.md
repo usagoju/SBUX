@@ -18,19 +18,25 @@ Students are required to visit the Starbucks website to obtain and gather the In
 
 To locate these filings, navigate to the [Starbucks homepage](https://www.starbucks.com/), scroll to the bottom of the homepage, and you will see a section labeled “About Us” in the lower left-hand corner. Under that section, one will see a link to “[Investor Relations](https://investor.starbucks.com/ir-home/default.aspx)” (Figure 2, Panel A). That link will direct you to the Starbucks Investor Relations page (Figure 2, Panel B). In the menu across the top of the page, you will see a link labeled “Financials”. When one hovers the mouse over it, a Financial Data pop-up screen will appear (Figure 2, Panel C).  Select “[Annual Reports](https://investor.starbucks.com/financials/annual-reports/default.aspx)” underneath the words “Financial Data”.  The latest annual report will appear (Figure 2, Panel D). Scrolling all the way down on this webpage, you will see Annual Reports dated back to 1999. You will select the "FY23 Annual Report" (Figure 2, Panel E) (Note: students should start with the latest published year available). When one clicks on this link, one will see a PDF version of the FY23 Annual Report, which contains the FY23 10-K . To find prior years’ financial data, students can look at past SEC filings directly in the Starbucks webpages. On the Starbucks [Annual Report Homepage](https://investor.starbucks.com/financials/annual-reports/default.aspx), under Financials, there is a link to [SEC Filings](https://investor.starbucks.com/financials/sec-filings/default.aspx) (Figure 2, Panel F). 
 
+<a href="https://www.starbucks.com" title="Click to visit">
+    <img src="images/The_bottom_of_Starbucks_Homepage_FY2023.jpg" alt="Descriptive Alt Text" style="width:100%;"/>
+</a>
+
 ```{figure} images/The_bottom_of_Starbucks_Homepage_FY2023.jpg
 :scale: 25 %
 :alt: The Bottom of Starbucks Homepage FY2023
 
-**Figure 2, Panel A: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **The Bottom of Starbucks Homepage FY2023**
 ```
+
+
 
 ```{figure} images/Starbucks_Investor_Relations_Page_FY2023.jpg
 :scale: 20 %
 :alt: Starbucks Investor Relations Page FY2023
 
-**Figure 2, Panel B: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Starbucks Investor Relations Page FY2023**
 ```
 
@@ -38,7 +44,7 @@ To locate these filings, navigate to the [Starbucks homepage](https://www.starbu
 :scale: 20 %
 :alt: Starbucks Investor Relations Page (hovering over Financial Data tab) FY2023
 
-**Figure 2, Panel C: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Starbucks Investor Relations Page (hovering over Financial Data tab) FY2023**
 ```
 
@@ -46,7 +52,7 @@ To locate these filings, navigate to the [Starbucks homepage](https://www.starbu
 :scale: 18 %
 :alt: Starbucks Annual Report Homepage FY2023
 
-**Figure 2, Panel D: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Starbucks Annual Report Homepage FY2023**
 ```
 
@@ -54,7 +60,7 @@ To locate these filings, navigate to the [Starbucks homepage](https://www.starbu
 :scale: 20 %
 :alt: Starbucks Annual Report Page FY2023
 
-**Figure 2, Panel E: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Starbucks  Annual Report Page FY2023**
 ```
 
@@ -62,7 +68,7 @@ To locate these filings, navigate to the [Starbucks homepage](https://www.starbu
 :scale: 20 %
 :alt: Starbucks SEC Filings Page FY2023
 
-**Figure 2, Panel F: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Starbucks SEC Filings Page FY2023**
 ```
 
@@ -72,7 +78,7 @@ Once the Annual Report has been accessed, scroll down to the Table of Contents. 
 :scale: 30 %
 :alt: Part II, Item 8. Statements of Earnings FY23023
 
-**Figure 2, Panel G: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Part II, Item 8. Statements of Earnings FY2023**
 ```
 
@@ -80,7 +86,7 @@ Once the Annual Report has been accessed, scroll down to the Table of Contents. 
 :scale: 30 %
 :alt: Part II, Item 8. Balance Sheets FY2023
 
-**Figure 2, Panel H: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Part II, Item 8. Balance Sheets FY2023**
 ```
 
@@ -88,7 +94,7 @@ Once the Annual Report has been accessed, scroll down to the Table of Contents. 
 :scale: 30 %
 :alt: Part II, Item 8. Cash Flow Statements FY2023
 
-**Figure 2, Panel I: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Part II, Item 8. Cash Flow Statements FY2023**
 ```
 
@@ -96,7 +102,7 @@ Once the Annual Report has been accessed, scroll down to the Table of Contents. 
 :scale: 30 %
 :alt: Part II, Item 8. Notes to Financial Statements FY2023
 
-**Figure 2, Panel J: Finding Financial Statement Information.** \
+**Finding Financial Statement Information.** \
 **Part II, Item 8. Notes to Financial Statements FY2023**
 ```
 
