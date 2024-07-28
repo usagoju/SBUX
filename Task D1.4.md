@@ -12,17 +12,17 @@ kernelspec:
 
 # Task D1.4 
 
-## Create charts and trend analysis of the horizontal, vertical and ratio analysis calculations.
+## Create charts and trend analysis of the horizontal, vertical, and ratio analysis calculations.
 
 Students are required to chart the results of their vertical, horizontal, and financial ratios. To create as few charts as possible, while still retaining the ability to analyze them, this exercise is simplified. Charting every line item in the income statement, balance sheet and cash flow statement in separate charts is a lot of unnecessary work. The volume of charts that students would be producing would make it very difficult to analyze data.  
 
-For horizontal analyses, students will create a two-dimensional line chart at least over two years, shown in Figure 4, Panels A and B below. For students who wish to use data from more than two years, longer trends will be more apparent, as seen on the chart on the right, Figure 4, Panel B. Using 2016-2018 Starbucks data for demonstration, the following charts are samples of visual representations of horizontal analyses submitted by former students. Note that the presentation of the charts on the x-axis is chronological from the earliest to the latest years, which is in reverse order from the presentation of the financial statements filed with the SEC.
+For horizontal analyses, students will create a two-dimensional line chart at least over two years, shown in Figure 4, Panels A and B below. For students who wish to use data from more than two years, longer trends will be more apparent. Using 2016-2018 Starbucks data for demonstration, the following charts are samples of visual representations of horizontal analyses submitted by former students. Note that the presentation of the charts on the x-axis is chronological from the earliest to the latest years, which is in reverse order from the presentation of the financial statements filed with the SEC.
 
 ```{figure} images/Balance_Sheet_Changes.jpg
 :scale: 150 %
 :alt: Balance Sheet Changes
 
-**Figure 4, Panel A: Sample Horizontal Analyses Charts.** \
+**Sample Horizontal Analyses Charts.** \
 **Balance Sheet Changes**
 ```
 
@@ -30,7 +30,7 @@ For horizontal analyses, students will create a two-dimensional line chart at le
 :scale: 150 %
 :alt: Cash Flow Horizontal Analysis
 
-**Figure 4, Panel B: Sample Horizontal Analyses Charts.** \
+**Sample Horizontal Analyses Charts.** \
 **Cash Flow Horizontal Analysis**
 ```
 
@@ -40,7 +40,7 @@ For the vertical analysis, students create one bar chart over at least three yea
 :scale: 150 %
 :alt: Revenue Streams Composition
 
-**Figure 4, Panel C: Sample Vertical Analyses Charts.** \
+**Sample Vertical Analyses Charts.** \
 **Revenue Streams Composition**
 ```
 
@@ -50,7 +50,7 @@ For income statement items, students group the different streams of revenue, and
 :scale: 150 %
 :alt: Vertical Analysis of Operation Expenses
 
-**Figure 4, Panel D: Sample Vertical Analyses Charts.** \
+**Sample Vertical Analyses Charts.** \
 **Vertical Analysis of Operation Expenses**
 ```
 
@@ -60,7 +60,7 @@ For cash flow items, students separate cash flows from/used by operating, invest
 :scale: 150 %
 :alt: Cash Flow Vertical Analysis
 
-**Figure 4, Panel E: Sample Vertical Analyses Charts.** \
+**Sample Vertical Analyses Charts.** \
 **Cash Flow Vertical Analysis**
 ```
 
@@ -74,7 +74,6 @@ The following figure lists all the charts students are required to create to ach
 :scale: 50 %
 :alt: Sample Charts to Create
 
-**Figure 4, Panel E: Sample Vertical Analyses Charts.** \
 **Sample Charts to Create**
 ```
 
