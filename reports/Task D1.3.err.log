@@ -1,0 +1,81 @@
+Traceback (most recent call last):
+  File "C:\Users\zengo\anaconda3\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\zengo\anaconda3\Lib\site-packages\nbclient\client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zengo\anaconda3\Lib\site-packages\jupyter_core\utils\__init__.py", line 173, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zengo\anaconda3\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\zengo\anaconda3\Lib\site-packages\nbclient\client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\zengo\anaconda3\Lib\site-packages\nbclient\client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\zengo\anaconda3\Lib\site-packages\nbclient\client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Function to calculate the current ratio
+
+from IPython.display import display
+
+def calculate_current_ratio(current_assets, current_liabilities):
+    """
+    Calculate the current ratio of a company.
+
+    Parameters:
+    current_assets (float): The total current assets of the company.
+    current_liabilities (float): The total current liabilities of the company.
+
+    Returns:
+    float: The current ratio, rounded to two decimal places.
+    """
+    # Ensure that current liabilities is not zero to avoid division by zero
+    if current_liabilities == 0:
+        return "Current liabilities cannot be zero."
+
+    # Calculate the current ratio
+    current_ratio = current_assets / current_liabilities
+
+    # Return the current ratio rounded to two decimal places
+    return round(current_ratio, 2)
+
+# Prompt user for inputs
+current_assets = float(input("Enter current assets: "))
+current_liabilities = float(input("Enter current liabilities: "))
+
+# Calculate the current ratio
+current_ratio = calculate_current_ratio(current_assets, current_liabilities)
+
+# Display the results
+print(f"Current Assets: ${current_assets}")
+print(f"Current Liabilities: ${current_liabilities}")
+print(f"The current ratio is: {current_ratio}")
+------------------
+
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mStdinNotImplementedError[0m                  Traceback (most recent call last)
+Cell [1;32mIn[2], line 27[0m
+[0;32m     24[0m     [38;5;28;01mreturn[39;00m [38;5;28mround[39m(current_ratio, [38;5;241m2[39m)
+[0;32m     26[0m [38;5;66;03m# Prompt user for inputs[39;00m
+[1;32m---> 27[0m current_assets [38;5;241m=[39m [38;5;28mfloat[39m([38;5;28minput[39m([38;5;124m"[39m[38;5;124mEnter current assets: [39m[38;5;124m"[39m))
+[0;32m     28[0m current_liabilities [38;5;241m=[39m [38;5;28mfloat[39m([38;5;28minput[39m([38;5;124m"[39m[38;5;124mEnter current liabilities: [39m[38;5;124m"[39m))
+[0;32m     30[0m [38;5;66;03m# Calculate the current ratio[39;00m
+
+File [1;32m~\anaconda3\Lib\site-packages\ipykernel\kernelbase.py:1261[0m, in [0;36mKernel.raw_input[1;34m(self, prompt)[0m
+[0;32m   1259[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m [38;5;28mself[39m[38;5;241m.[39m_allow_stdin:
+[0;32m   1260[0m     msg [38;5;241m=[39m [38;5;124m"[39m[38;5;124mraw_input was called, but this frontend does not support input requests.[39m[38;5;124m"[39m
+[1;32m-> 1261[0m     [38;5;28;01mraise[39;00m StdinNotImplementedError(msg)
+[0;32m   1262[0m [38;5;28;01mreturn[39;00m [38;5;28mself[39m[38;5;241m.[39m_input_request(
+[0;32m   1263[0m     [38;5;28mstr[39m(prompt),
+[0;32m   1264[0m     [38;5;28mself[39m[38;5;241m.[39m_parent_ident[[38;5;124m"[39m[38;5;124mshell[39m[38;5;124m"[39m],
+[0;32m   1265[0m     [38;5;28mself[39m[38;5;241m.[39mget_parent([38;5;124m"[39m[38;5;124mshell[39m[38;5;124m"[39m),
+[0;32m   1266[0m     password[38;5;241m=[39m[38;5;28;01mFalse[39;00m,
+[0;32m   1267[0m )
+
+[1;31mStdinNotImplementedError[0m: raw_input was called, but this frontend does not support input requests.
+
